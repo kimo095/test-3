@@ -3,23 +3,6 @@
 <head>
 	<title>My Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="CSS/Styles.css">
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script>
-		$(document).ready(function() {
-			// Add smooth scrolling to all links
-			$("a").on('click', function(event) {
-				if (this.hash !== "") {
-					event.preventDefault();
-					var hash = this.hash;
-					$('html, body').animate({
-						scrollTop: $(hash).offset().top
-					}, 800, function(){
-						window.location.hash = hash;
-					});
-				}
-			});
-		});
-	</script>
    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 </head>
@@ -85,7 +68,7 @@
 
 	<section id="contact">
 		<h2>Contact Me</h2>
-		<form>
+		<form id="contact-form">
 			<label for="name">Name:</label>
 			<input type="text" id="name" name="name" required>
 
