@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="CSS/Styles.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			// Add smooth scrolling to all links
+			$("a").on('click', function(event) {
+				if (this.hash !== "") {
+					event.preventDefault();
+					var hash = this.hash;
+					$('html, body').animate({
+						scrollTop: $(hash).offset().top
+					}, 800, function(){
+						window.location.hash = hash;
+					});
+				}
+			});
+		});
+	</script>
+   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>My Portfolio</h1>
+		<nav>
+			<ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+  <section id="about" class="about">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>About</h2>
+        <p>Passionate software engineer with experience
+          in front-end development in addition to predictive
+          modeling and data mining. Excited to implement statistical
+          machine-learning solutions. I have the skills to analyze data
+          for actionable insights. Specific tasks include: Identifying the data-analytics
+           problems that offer the greatest opportunities to the organization. Determining the correct data sets and variables.
+</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4" data-aos="fade-right">
+        </div>
+        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <h3>Web Developer</h3>
+          <p class="fst-italic">
+            Main focus on React.js with JavaScript & Angular with Typescript
+          </p>
+          <div class="row">
+            <div class="col-lg-6">
+              <ul>
+
+                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>eng09karim@gmail.com</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+3912345678</span></li>
+                <a href=""><li><i class="bi bi-chevron-right"></i> <strong>Linkdln:</strong> <span> www.linkedin.com/in/abdelkareem-jebreel-39307b167</span></li></a>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+	<section id="projects">
+		<h2>My Projects</h2>
+		<ul>
+			<li><a href="#">Project 1</a></li>
+			<li><a href="#">Project 2</a></li>
+			<li><a href="#">Project 3</a></li>
+		</ul>
+	</section>
+
+	<section id="contact">
+		<h2>Contact Me</h2>
+		<form>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="message">Message:</label>
+			<textarea id="message" name="message" required></textarea>
+
+			<button type="submit">Send</button>
+		</form>
+	</section>
+
+	<footer>
+		<p>&copy; 2023 Abdelkareem Jebreel</p>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
